@@ -10,6 +10,7 @@
 		37561F17202244010098D3B5 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37561F16202244010098D3B5 /* Runner.cpp */; };
 		37561F1B202244560098D3B5 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37561F19202244560098D3B5 /* Controller.cpp */; };
 		37561F1F202247060098D3B5 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37561F1D202247060098D3B5 /* Timer.cpp */; };
+		37561F2220224D190098D3B5 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37561F2020224D190098D3B5 /* FileController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		37561F1A202244560098D3B5 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		37561F1D202247060098D3B5 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		37561F1E202247060098D3B5 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		37561F2020224D190098D3B5 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		37561F2120224D190098D3B5 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				37561F1C202246DD0098D3B5 /* Tools */,
 				37561F19202244560098D3B5 /* Controller.cpp */,
 				37561F1A202244560098D3B5 /* Controller.hpp */,
+				37561F2020224D190098D3B5 /* FileController.cpp */,
+				37561F2120224D190098D3B5 /* FileController.hpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				37561F1F202247060098D3B5 /* Timer.cpp in Sources */,
 				37561F17202244010098D3B5 /* Runner.cpp in Sources */,
 				37561F1B202244560098D3B5 /* Controller.cpp in Sources */,
+				37561F2220224D190098D3B5 /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
