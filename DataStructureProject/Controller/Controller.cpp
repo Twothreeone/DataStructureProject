@@ -12,5 +12,8 @@ using namespace std;
 
 void Controller :: start()
 {
-    
+    Timer codeTimer;
+    codeTimer.startTimer();
+    codeTimer.stopTimer();
+    cout << codeTimer.getTimeInMicroseconds() << endl;
 }
