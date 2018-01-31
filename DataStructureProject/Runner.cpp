@@ -1,15 +1,16 @@
 //
-//  main.cpp
+//  Runner.cpp
 //  DataStructureProject
 //
 //  Created by Charlesworth, Benjamin on 1/31/18.
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#include <iostream>
+#include "Controller/Controller.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    Controller app;
+    app.start();
     return 0;
 }
