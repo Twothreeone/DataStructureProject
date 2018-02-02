@@ -42,5 +42,8 @@ void Controller :: findMaxAndMin()
 
 void Controller :: testArray()
 {
-    
+    Array<int> benArray(45);
+    benArray[0] = 123;
+    benArray.setAtIndex(0, 321);
+    cout << benArray[0] << endl;
 }
