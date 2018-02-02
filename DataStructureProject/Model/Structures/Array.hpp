@@ -32,4 +32,30 @@ public:
     void setAtIndex(int index, Type data);
 }
 
+template <class Type>
+Array<Type> :: Array(int size)
+{
+    assert(size > 0);
+    this->size = size;
+    internalArray = new Type[size];
+}
+
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toCopy)
+{
+    this->size = toCopy.getSize();
+    internalArray = new Type[size];
+    for(int i = 0; i < size; i++)
+    {
+        internalArray[i] = toCopy[i];
+    }
+}
+
+template <class Type>
+Array<Type> :: ~Array()
+{
+    delete [] internalArray;
+}
+
+
 #endif /* Array_hpp */
