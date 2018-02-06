@@ -29,3 +29,17 @@ void ArrayTester :: testArrayUse()
     thirdArray[5] = 123;
     cout << thirdArray[5] << endl;
 }
+
+void ArrayTester :: testAdvancedArray()
+{
+    Array<int> testArray(5);
+    if (testArray.getSize() == 5)
+    {
+        cout << "getSize works" << endl;
+    }
+    testArray.setAtIndex(1, 5);
+    if (testArray.getFromIndex(1) == 5)
+    {
+        cout << "setAtIndex and getFromIndex work" << endl;
+    }
+}
