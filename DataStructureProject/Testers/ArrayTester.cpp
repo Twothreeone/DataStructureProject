@@ -32,14 +32,21 @@ void ArrayTester :: testArrayUse()
 
 void ArrayTester :: testAdvancedArray()
 {
-    Array<int> testArray(5);
-    if (testArray.getSize() == 5)
+    vector<CrimeData> test = FileController :: readCrimeDataToVector("/Users/bcha1422/Documents/C++ Projects/DataStructureProject/DataStructureProject/Data/crime.csv");
+    int arraySize = test.size();
+    Array<CrimeData> data(arraySize);
+    for (int i = 0; i < arraySize; i++)
     {
-        cout << "getSize works" << endl;
+        data[i] = test[i];
     }
-    testArray.setAtIndex(1, 5);
-    if (testArray.getFromIndex(1) == 5)
-    {
-        cout << "setAtIndex and getFromIndex work" << endl;
-    }
+    Timer vectorTimer;
+    Timer arrayTimer;
+    vectorTimer.startTimer();
+    cout << test[3425] << endl;
+    vectorTimer.stopTimer();
+    vectorTimer.displayInformation();
+    arrayTimer.startTimer();
+    cout << data[3425] << endl;
+    arrayTimer.stopTimer();
+    arrayTimer.displayInformation();
 }
