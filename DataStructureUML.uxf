@@ -5,8 +5,8 @@
     <id>UMLClass</id>
     <coordinates>
       <x>580</x>
-      <y>180</y>
-      <w>300</w>
+      <y>200</y>
+      <w>320</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>Node&lt;Type&gt;
@@ -26,7 +26,7 @@ bg=green
     <coordinates>
       <x>580</x>
       <y>10</y>
-      <w>300</w>
+      <w>320</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>LinearNode&lt;Type&gt;
@@ -49,9 +49,42 @@ bg=cyan
       <x>720</x>
       <y>130</y>
       <w>30</w>
-      <h>70</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>10</y>
+      <w>290</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>/List&lt;Type&gt;/
+-
+# size : int
+-
+/+ add(Type item) : void/
+/+ addAtIndex(int index, Type item) : void/
+/+ getFromIndex(int index) : Type/
+/+ remove(int index) : Type/
+/+ getSize() const : int/
+/+ getFront() : LinearNode&lt;Type&gt; */
+/+ getEnd() : LinearNode&lt;Type&gt; */
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>80</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
   </element>
 </diagram>
