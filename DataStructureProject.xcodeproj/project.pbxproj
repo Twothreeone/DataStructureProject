@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		37109A78202CD8F10029F5C9 /* DataStructureUML.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DataStructureUML.uxf; sourceTree = "<group>"; };
+		37109A7A202CE1C50029F5C9 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		37561F0C202243590098D3B5 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		37561F16202244010098D3B5 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		37561F19202244560098D3B5 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				375DA6802024EE66005D88D3 /* Array.hpp */,
+				37109A7A202CE1C50029F5C9 /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
