@@ -20,7 +20,7 @@ public:
     Node();
     Node(Type data);
     void setData(Type data);
-    Type getData;
+    Type getData();
 };
 
 template <class Type>
