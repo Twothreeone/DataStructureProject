@@ -42,6 +42,7 @@
 		37561F2520224FBC0098D3B5 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		37561F2620224FBC0098D3B5 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		375DA6802024EE66005D88D3 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		375F7E2B2034B944008F4699 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		378893A1202A33A300D3F79A /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		378893A2202A33A300D3F79A /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		378893A6202A418100D3F79A /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 			children = (
 				375DA6802024EE66005D88D3 /* Array.hpp */,
 				37109A7A202CE1C50029F5C9 /* List.hpp */,
+				375F7E2B2034B944008F4699 /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
