@@ -33,6 +33,28 @@ void LinkedListTester :: testListBasics()
     numbers.addAtIndex(0, 2312);
     cout << numbers.getFront()->getData() << " is at the front of the list and should be 2312" << endl;
     cout << numbers.getEnd()->getData() << " is at the end of the list and should be 32567" << endl;
+    
+    LinkedList<string> words;
+    words.add("hi");
+    cout << words.getFront()->getData() << " is at the front of the list and should be hi" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be hi" << endl;
+    words.add("bye");
+    cout << words.getFront()->getData() << " is at the front of the list and should be hi" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be bye" << endl;
+    words.addAtIndex(1, "word");
+    words.add("thing");
+    cout << words.getFront()->getData() << " is at the front of the list and should be hi" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be thing" << endl;
+    cout << "This loop should print 4 lines" << endl;
+    for (int i = 0; i < words.getSize(); i++)
+    {
+        cout << words.getFromIndex(i) << endl;
+    }
+    words.remove(0);
+    words.add("asdfjkl;");
+    words.addAtIndex(0, ";lkjfdsa");
+    cout << words.getFront()->getData() << " is at the front of the list and should be ;lkjfdsa" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be asdfjkl;" << endl;
 }
 
 void LinkedListTester :: testListWithData()
@@ -40,7 +62,7 @@ void LinkedListTester :: testListWithData()
     Timer listTimer;
     
     listTimer.startTimer();
-    LinkedList<CrimeData> crimes = FileController :: readDataToList("/Users/bwor0809/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
+    LinkedList<CrimeData> crimes = FileController :: readDataToList("/Users/bcha1422/Documents/C++ Projects/DataStructureProject/DataStructureProject/Data/crime.csv");
     
     listTimer.stopTimer();
     cout << "This is how long it took to read the structure into our custom data structure" << endl;

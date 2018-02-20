@@ -15,6 +15,7 @@
 #include "FileController.hpp"
 #include "../Model/Structures/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
 
 class Controller
 {
