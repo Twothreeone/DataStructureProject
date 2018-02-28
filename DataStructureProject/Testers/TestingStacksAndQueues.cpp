@@ -86,6 +86,11 @@ void TestingStacksAndQueues :: stackVersusQueue()
     }
     for (int i = 0; i < 10; i++)
     {
+        stackFromQueue.push(queue.dequeue());
+        queueFromStack.enqueue(stack.pop());
+    }
+    for (int i = 0; i < 10; i++)
+    {
         cout << i << endl;
         cout << "Stack result: " << stackFromQueue.pop() << endl;
         cout << "Queue result: " << queueFromStack.dequeue() << endl;
