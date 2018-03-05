@@ -15,6 +15,7 @@
 		375F7E2F2034C6DD008F4699 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 375F7E2D2034C6DD008F4699 /* LinkedListTester.cpp */; };
 		376615D6204492EB007AAEEC /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 376615D4204492EB007AAEEC /* TestingStacksAndQueues.cpp */; };
 		378893A3202A33A300D3F79A /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 378893A1202A33A300D3F79A /* ArrayTester.cpp */; };
+		37EFC1DB204DC534008C7424 /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37EFC1D9204DC534008C7424 /* RecursionTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,8 @@
 		378893A9202A492F00D3F79A /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		37E85EB1203F497E00FD634D /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		37E85EB4203F4E4F00FD634D /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		37EFC1D9204DC534008C7424 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
+		37EFC1DA204DC534008C7424 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				375F7E2E2034C6DD008F4699 /* LinkedListTester.hpp */,
 				376615D4204492EB007AAEEC /* TestingStacksAndQueues.cpp */,
 				376615D5204492EB007AAEEC /* TestingStacksAndQueues.hpp */,
+				37EFC1D9204DC534008C7424 /* RecursionTester.cpp */,
+				37EFC1DA204DC534008C7424 /* RecursionTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EFC1DB204DC534008C7424 /* RecursionTester.cpp in Sources */,
 				37561F1F202247060098D3B5 /* Timer.cpp in Sources */,
 				37561F2720224FBC0098D3B5 /* CrimeData.cpp in Sources */,
 				37561F17202244010098D3B5 /* Runner.cpp in Sources */,
