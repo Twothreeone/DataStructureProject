@@ -12,9 +12,8 @@ using namespace std;
 
 void Controller :: start()
 {
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+    SortingTester test;
+    test.testSorts();
 }
 
 void Controller :: findMaxAndMin()

@@ -17,6 +17,7 @@
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/RecursionTester.hpp"
+#include "../Testers/SortingTester.hpp"
 
 class Controller
 {
