@@ -19,7 +19,7 @@ private:
     int swapCount;
     void quickSort(vector<CrimeData> & data, int low, int high);
     int partition(vector<CrimeData> & data, int low, int high);
-    void swap(vector<CrimeData> & info, int small, int large);
+    void swap(vector<CrimeData> & data, int low, int high);
 public:
     void testSorts();
 };
