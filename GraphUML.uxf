@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>90</y>
+      <w>590</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>NonLinear :: Graph
+-
+- MAXIMUM : int
+- adjacencyMatrix : bool[][]
+- weightCostMatrix : int[][]
+- graphData : Type[]
+- vertexCount : int
+-
+Graph() : constructor
+
++ addVertex(const Type &amp; value) : void
+
+Connect vertices
++ addEdge(int source, int target) : void
++ addEdgeUndirected(int source, int target) : void
++ addEdgeCost(int source, int target, int cost) : void
+
+Disconnect vertices
++ removeEdge(int source, int target) : void
++ removeEdgeUndirected(int source, int target) : void
++ removeEdgeCost(int source, int target) : void
+
+Accessors
++ operator [](int vertex) : Type &amp;
++ operator [](int vertex) : Type const
++ size() const : int
+
+Check connections
++ hasUndirectedConnection(int source, int target) : const bool
++ areConnected(int source, int target) : const bool
++ neighbors(int vertex) : const std::set&lt;int&gt;
+
+Traversals
++ depthFirstTraversal(Graph&lt;Type&gt; &amp; graph, int vertex) : void
++ breadthFirstTraversal(Graph&lt;Type&gt; &amp; graph, int vertex) : void
++ costTraversal(Graph&lt;Type&gt; &amp; graph, int vertex) : void
+- depthFirstTraversal(Graph&lt;Type&gt; &amp; graph, int vertex, bool markedVertices[]) : void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
