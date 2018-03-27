@@ -37,7 +37,7 @@ bg=green
     <coordinates>
       <x>500</x>
       <y>110</y>
-      <w>340</w>
+      <w>310</w>
       <h>210</h>
     </coordinates>
     <panel_attributes>BinaryTreeNode&lt;Type&gt;
@@ -51,9 +51,9 @@ bg=green
 + getRoot() : BinaryTreeNode&lt;Type&gt; *
 + getLeft() : BinaryTreeNode&lt;Type&gt; *
 + getRight() : BinaryTreeNode&lt;Type&gt; *
-+ setRootNode(BinaryTreeNode&lt;Type&gt; *) : void
-+ setLeftNode(BinaryTreeNode&lt;Type&gt; *) : void
-+ setRightNode(BinaryTreeNode&lt;Type&gt; *) : void
++ setRoot(BinaryTreeNode&lt;Type&gt; *) : void
++ setLeft(BinaryTreeNode&lt;Type&gt; *) : void
++ setRight(BinaryTreeNode&lt;Type&gt; *) : void
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
