@@ -12,7 +12,7 @@
 #include "Node.hpp"
 
 template <class Type>
-class BinaryTreeNode<Type> : public Node<Type>
+class BinaryTreeNode : public Node<Type>
 {
 private:
     BinaryTreeNode<Type> * root;

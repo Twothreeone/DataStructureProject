@@ -57,4 +57,29 @@ bg=green
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>340</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>/Tree&lt;Type&gt;/
+-
+# root : BinaryTreeNode&lt;Type&gt;
+-
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
++ insert(Type) : void
++ contains(Type) : bool
++ removed(Type) : void
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ postOrderTraversal() : void
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
