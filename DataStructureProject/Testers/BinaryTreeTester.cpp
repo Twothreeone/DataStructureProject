@@ -23,5 +23,8 @@ void BinaryTreeTester :: doTreeStuff()
     testTree.insert(9001);
     testTree.insert(10);
     testTree.insert(600);
+    testTree.demoTraversalSteps();
     testTree.inOrderTraversal();
+    testTree.preOrderTraversal();
+    testTree.postOrderTraversal();
 }
