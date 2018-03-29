@@ -177,13 +177,13 @@ void BinarySearchTree<Type> :: remove(Type value)
 template <class Type>
 Type BinarySearchTree<Type> :: findMinimum()
 {
-    return null;
+    return nullptr;
 }
 
 template <class Type>
 Type BinarySearchTree<Type> :: findMaximum()
 {
-    return null;
+    return nullptr;
 }
 
 template <class Type>
@@ -241,7 +241,7 @@ BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe);
+void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
     
 }
