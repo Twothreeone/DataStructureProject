@@ -100,25 +100,25 @@ void BinarySearchTree<Type> :: demoTraversalSteps()
 template <class Type>
 int BinarySearchTree<Type> :: getSize()
 {
-    return -1;
+    return calculateSize(this->root);
 }
 
 template <class Type>
 int BinarySearchTree<Type> :: getHeight()
 {
-    return -1;
+    return calculateHeight(this->root);
 }
 
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete()
 {
-    return false;
+    return isComplete(this->root, 0, getSize());
 }
 
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced()
 {
-    return false;
+    return isBalanced(this->root);
 }
 
 template <class Type>
@@ -190,25 +190,56 @@ Type BinarySearchTree<Type> :: findMaximum()
 template <class Type>
 int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
 {
-    return -1;
+    if (startNode != nullptr)
+    {
+        return calculateSize(startNode->getLeftNode()) + calculateSize(startNode->getRightNode()) + 1;
+    }
+    return 0;
 }
 
 template <class Type>
 int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
 {
-    return -1;
+    if (startNode != nullptr)
+    {
+        return max(calculateHeight(startNode->getLeftNode()), calculateHeight(startNode->getRightNode())) + 1;
+    }
+    return 0;
 }
 
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
 {
+    int leftHeight = 0;
+    int rightHeight = 0;
+    if (startNode == nullptr)
+    {
+        return true;
+    }
+    leftHeight = calculateHeight(startNode->getLeftNode());
+    rightHeight = calculateHeight(startNode->getRightNode());
+    int heightDifference = abs(leftHeight - rightHeight);
+    bool leftBalanced = isBalanced(startNode->getLeftNode());
+    bool rightBalanced = isBalanced(startNode->getRightNode());
+    if (heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
     return false;
 }
 
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
 {
-    return false;
+    if (startNode == nullptr)
+    {
+        return true;
+    }
+    if (index >= size)
+    {
+        return false;
+    }
+    return isComplete(startNode->getLeftNode(), 2 * index + 1, size) && isComplete(startNode->getRightNode(), 2 * index + 2, size);
 }
 
 template <class Type>
