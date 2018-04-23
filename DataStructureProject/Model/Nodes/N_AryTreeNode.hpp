@@ -42,7 +42,7 @@ N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
     for (int i = nodes.size() - 1; i >= 0; i--)
     {
-        delete nodes[index];
+        delete nodes[i];
     }
 }
 
