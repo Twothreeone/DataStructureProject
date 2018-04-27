@@ -49,13 +49,13 @@ Hashtable<Type> :: ~Hashtable()
 template <class Type>
 long Hashtable<Type> :: getNextPrime()
 {
-    
+    return -1;
 }
 
 template <class Type>
 bool Hashtable<Type> :: isPrime(long current)
 {
-    
+    return false;
 }
 
 template <class Type>
@@ -67,13 +67,13 @@ void Hashtable<Type> :: resize()
 template <class Type>
 long Hashtable<Type> :: findPosition(HashNode<Type>* insertedNode)
 {
-    
+    return -1;
 }
 
 template <class Type>
 long Hashtable<Type> :: handleCollision(HashNode<Type>* insertedNode, long index)
 {
-    
+    return -1;
 }
 
 template <class Type>
@@ -85,7 +85,7 @@ void Hashtable<Type> :: insert(Type data)
 template <class Type>
 long Hashtable<Type> :: getSize()
 {
-    
+    return -1;
 }
 
 #endif /* Hashtable_hpp */
