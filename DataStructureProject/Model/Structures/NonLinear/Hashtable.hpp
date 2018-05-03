@@ -117,7 +117,25 @@ long Hashtable<Type> :: handleCollision(long index)
 template <class Type>
 void Hashtable<Type> :: insert(Type data)
 {
-    
+    this->size++;
+    if (((this->size * 1.000) / this->capacity) > this->loadFactor)
+    {
+        resize();
+    }
+    HashNode<Type> * temp = new HashNode<Type>(value);
+    long index = findPosition(temp);
+    if (internalStorage[index] == nullptr)
+    {
+        internalStorage[index] = temp;
+    }
+    else
+    {
+        long updatedPosition = handleCollision(index);
+        if (updatedPosition != -1)
+        {
+            internal[updatedPosition] = temp;
+        }
+    }
 }
 
 template <class Type>
