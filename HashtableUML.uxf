@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+-
+# data : Type
+-
++ Node() : constructor
++ Node(Type data) : constructor
++ getData() : Type
++ setData(Type data) : void
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>10</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>HashNode&lt;Type&gt;
+-
+- key : long
+-
++ HashNode() : constructor
++ HashNode(Type data) : constructor
++ getKey() : long
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>190</y>
+      <w>390</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Hashtable&lt;Type&gt;
+-
+- internalStorage : HashNode&lt;Type&gt;**
+- size : long
+- capacity : long
+- loadFactor : double
+-
++ Hashtable() : constructor
++ ~Hashtable() : destructor
+- getNextPrime() : long
+- isPrime(long current) : bool
+- resize() : void
+- findPosition(HashNode&lt;Type&gt; * insertedNode) : long
+- handleCollision(long index) : long
++ insert(Type data) : void
++ getSize() : long
++ get(long index) : HashNode&lt;Type&gt; *
++ contains(HashNode&lt;Type&gt; * value) : bool
+bg=magenta
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>60</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>100</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
